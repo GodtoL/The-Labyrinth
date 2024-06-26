@@ -157,7 +157,11 @@ void Maze::printSolution() {
             else
                 std::cout << "   ";
         }
+        if(y == height - 1){ 
+        std::cout << "\n";
+        }else{
         std::cout << "|\n";
+        }
     }
     
 
@@ -180,7 +184,11 @@ void Maze::print() {
         for (int x = 0; x < width; ++x) {
             std::cout << (grid[y][x].left ? "|   " : "    ");
         }
+        if(y == height - 1){ 
+        std::cout << "\n";
+        }else{
         std::cout << "|\n";
+        }
     }
 
     // Print bottom walls
